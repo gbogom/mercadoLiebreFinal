@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Main_background: blue;
+  --Amarillo: #EAC926;
+  --Azul: #03264C;
+  --Celeste: #1259c3;
+  --Gris_oscuro: #666;
+  --Gris_claro: #ebebeb;
+  --Verde: #39b54a;
+  --Blanco: #ffffff;
+  --Azul_hover: #0022AA;
+  --Negro: black;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Negro);
+}
+
+ul li {
+  list-style-type: none;
+}
+
+input {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}

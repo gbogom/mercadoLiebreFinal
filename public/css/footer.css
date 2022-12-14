@@ -1,0 +1,39 @@
+@import url(normalize.css);
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-section {
+  padding: 2rem;
+  font-size: 10px;
+  text-align: center;
+  max-width: 30rem;
+  display: block;
+  margin-bottom: 10px
+}
+
+.footer-icon {
+  font-size: 20px;
+}
+
+.footer-section .footer-icon:hover {
+  color: var(--Amarillo);
+}
+
+
+@media (min-width: 361px) {
+  #copyright {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

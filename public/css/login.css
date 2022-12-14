@@ -1,0 +1,57 @@
+@import url(normalize.css);
+
+.main {
+  background-color: var(--Gris_claro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.login-form {
+  width: 70%;
+  margin: 1rem;
+}
+
+.field-input {
+  display: block;
+  margin-bottom: 2rem;
+  padding-left: 0.7rem;
+  width: 100%;
+  background-color: var(--Blanco);
+  border-radius: 4px;
+}
+
+.field-input input {
+  width: 100%;
+  padding: 0.7rem;
+}
+
+.submit-button button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: var(--Azul);
+  color: var(--Blanco);
+}
+
+.submit-button:hover button {
+  background-color: var(--Azul_hover);
+}
+
+@media (min-width: 361px) {
+  
+}
+
+@media (min-width: 769px) {
+  .field-input {
+    width: 40%;
+  }
+
+  .buttons {
+    width: 40%;
+  }
+
+  .submit-button button {
+    width: 40%;
+  }
+}

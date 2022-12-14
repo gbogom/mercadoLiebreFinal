@@ -1,0 +1,135 @@
+/* @import url(normalize.css) */
+@import url(normalize.css);
+@import url(header.css);
+@import url(footer.css);
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--Gris_claro);
+  font-size: 12px;
+}
+
+main {
+  background-color: var(--Gris_claro);
+}
+
+img {
+  vertical-align: top;
+}
+
+.main {
+  width: 90%;
+  margin: auto;
+  border: 10%;
+  border-color: var(--Gris_claro);
+  background-color: var(--Gris_claro)
+}
+
+.titular {
+  font-size: 24px;
+  width: 100%;
+  margin: 1rem;
+}
+
+.last-visit,
+.ofertas {
+  justify-content: space-evenly;
+}
+
+.last-visit,
+.ofertas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+.product {
+  background-color: var(--Blanco);
+  border: solid 5px var(--Gris_claro);
+}
+
+.product-name {
+  display: none;
+}
+
+.product-description {
+  background-color: var(--Blanco);
+  border-top: solid 1px var(--Gris_claro);
+  padding: 1rem;
+  position: relative
+}
+
+.price-and-discount {
+  display: flex;
+}
+
+.price {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.discount {
+  font-size: 1rem;
+  color: var(--Verde);
+  margin: 0;
+  padding-left: 1rem
+}
+
+/* Configuracion del icono del camion */
+.truck {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  color: var(--Verde);
+  border: 1px solid var(--Verde);
+  background-color: var(--Blanco);
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: transform 450ms;
+}
+
+.product:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.product:hover .product-name {
+  display: inline-block;
+}
+
+.product:hover .truck {
+  display: inline-block;
+  transform: rotateZ(270deg);
+  right: 20px;
+}
+
+
+/* ** Tablet **  */
+@media (min-width:361px) {
+
+  .product {
+    margin-bottom: 1rem;
+    width: 45%;
+  }
+
+  .product-name {
+    font-size: 16px;
+  }
+
+}
+
+/* ** Desktop **  */
+@media (min-width:769px) {
+  .product {
+    width: 23%;
+  }
+
+  .product-name {
+    font-size: 16px;
+  }
+
+}

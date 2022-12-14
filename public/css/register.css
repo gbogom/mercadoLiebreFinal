@@ -1,0 +1,115 @@
+@import url(normalize.css);
+
+.main {
+  background-color: var(--Gris_claro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.register-form {
+  width: 70%;
+  margin: 1rem;
+}
+
+.field-input {
+  display: block;
+  margin-bottom: 2rem;
+  padding-left: 0.7rem;
+  width: 100%;
+  background-color: var(--Blanco);
+  border-radius: 4px;
+}
+
+.field-input input {
+  width: 100%;
+  height: 100%;
+  padding: 0.70rem;
+}
+
+.dateOfBirth {
+  margin-bottom: 2rem;
+}
+
+.dateOfBirth label h2 {
+  margin-bottom: 1rem;
+}
+
+.dateOfBirth input {
+  background-color: var(--Blanco);
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.user-profile {
+  margin-bottom: 2rem;
+}
+
+.user-profile label h2 {
+  margin-bottom: 1rem;
+}
+
+.interests {
+  margin-bottom: 2rem;
+}
+
+.interests_option {
+  display: flex;
+  flex-direction: column;
+}
+
+.interest_option div input {
+  display: inline;
+  margin: 0.5rem;
+}
+
+.picture label h2 {
+  margin-top: 1rem;
+}
+
+.picture {
+  margin-bottom: 2rem;
+}
+
+.picture input {
+  margin-top: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button,
+.reset-button {
+  width: 45%;
+}
+
+.submit-button button,
+.reset-button button {
+  width: 100%;
+  padding: 0.70rem;
+  background-color: var(--Azul);
+  border-radius: 4px;
+  color: var(--Blanco);
+}
+
+.submit-button:hover button,
+.reset-button:hover button {
+  background-color: var(--Azul_hover);
+  cursor: pointer;
+}
+
+
+@media (min-width: 361px) {}
+
+@media (min-width: 769px) {
+  .field-input {
+    width: 40%;
+  }
+
+  .buttons {
+    width: 40%;
+  }
+}
